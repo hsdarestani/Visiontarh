@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strategic Pivot Proposal - Vision Tarh Rasam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffffff;
+            color: #333;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(180deg, #ffd700, #ffffff);
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+        }
+        header p {
+            font-size: 1.5em;
+            margin: 20px 0 0;
+            color: #666;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10%;
+            text-align: center;
+            gap: 20px;
+        }
+        .section h2 {
+            font-size: 2.8em;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #333;
+            animation: fadeInUp 1.5s;
+        }
+        .section p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.8em;
+            max-width: 800px;
+        }
+        .scenario {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ffd700;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+            animation: fadeIn 2s;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .output {
+            margin-top: 40px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .dashboard {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 40px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .dashboard h3 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #333;
+        }
+        .dashboard .chart {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            height: 200px;
+            width: 100%;
+            max-width: 600px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .dashboard .chart .bar {
+            width: 50px;
+            background: #ffd700;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            color: #333;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .frameworks {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+        .frameworks ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .frameworks ul li {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .section h2 {
+                font-size: 2em;
+            }
+            .dashboard .chart {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+            .dashboard .chart .bar {
+                width: 80%;
+                height: 30px;
+            }
+        }
+        #importance-of-pivot {
+    text-align: center;
+    padding: 50px 10%;
+}
+#importance-of-pivot h2 {
+    font-size: 2.8em;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+#importance-of-pivot p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+#market-context {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f9f9f9;
+}
+
+#market-context h2 {
+    font-size: 2.8em;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+#market-context p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Strategic Pivot Proposal</h1>
+        <p>Customized Solutions for Vision Tarh Rasam</p>
+        <a href="#section1" class="scroll-link">Explore the Strategy</a>
+    </header>
+
+    <div id="section1" class="section">
+        <h2 data-aos="fade-right" data-aos-duration="1000">Step 1: Define the Problem</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+            Identifying the key challenges and opportunities for Vision Tarh Rasam based on market analysis, customer insights, and internal resources. Relevant frameworks like 
+            <a href="https://www.mckinsey.com/business-functions/strategy-and-corporate-finance" target="_blank">McKinsey 7S Framework</a> and 
+            <a href="https://www.bcg.com/capabilities/strategy/default" target="_blank">BCG Growth Matrix</a> are utilized.
+        </p>
+        
+        <img src="https://cdn-icons-png.flaticon.com/512/2312/2312175.png" alt="McKinsey Framework" data-aos="zoom-in" data-aos-duration="1000">
+    </div>
+    <div id="market-context" class="section" style="background: #f9f9f9;">
+        <h2 data-aos="fade-up" data-aos-duration="1000">Depth of Market Context</h2>
+        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            Vision Tarh Rasam operates in a dynamic advertising landscape as the exclusive executor of advertisements in fuel stations across Iran, including major urban centers like Tehran and the northern regions. The strategic placement of billboards in high-traffic fuel stations offers unparalleled visibility to both local commuters and long-distance travelers.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            The Iranian advertising market is unique, blending traditional mediums like billboards with a growing demand for modern, digital out-of-home (DOOH) advertising. However, the industry faces challenges such as strict regulatory oversight by the Ministry of Culture and Islamic Guidance, which mandates adherence to cultural norms and Islamic principles.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+            With exclusive access to high-visibility spaces, Vision Tarh Rasam is well-positioned to capitalize on the unique characteristics of the Iranian advertising market while navigating its complexities with cultural sensitivity and market intelligence.
+        </p>
+    </div>
+    
+    <div id="importance-of-pivot" class="section">
+        <h2 data-aos="fade-up" data-aos-duration="1000">The Importance of Business Pivots for Vision Tarh Rasam</h2>
+        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            In today's rapidly evolving market landscape, the ability to adapt through strategic pivots is crucial for sustained success. Recent studies highlight how businesses that effectively pivot can navigate challenges and seize new opportunities.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            For instance, a study published in the <a href="https://link.springer.com/article/10.1007/s41471-023-00177-9" target="_blank">Schmalenbach Journal of Business Research</a> examines how ventures responded to the challenges of the COVID-19 pandemic by performing temporary pivots, emphasizing the importance of adaptability in times of crisis.
+        </p>
+        <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            Another article from the <a href="https://oxford-review.com/pivot-to-prosperity-the-art-and-science-of-business-transformation/" target="_blank">Oxford Review</a> discusses the art and science of business transformation, providing insights into how strategic pivots can lead to prosperity.
+        </p>
+    </div>
+
+    <div id="section2" class="section">
+        <h2 data-aos="fade-left" data-aos-duration="1000">Step 2: Explore Scenarios</h2>
+        <div class="scenario">
+            <div class="card" data-aos="flip-left" data-aos-duration="1000">
+                <img src="https://cdn-icons-png.flaticon.com/512/1231/1231292.png" alt="Product Pivot">
+                <h3>Product Pivot</h3>
+                <p>Redesigning advertising offerings or product overhaul to leverage creativity and technology for innovative campaigns.</p>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
+                <img src="https://cdn-icons-png.flaticon.com/512/3039/3039465.png" alt="Industry Pivot">
+                <h3>Industry Pivot</h3>
+                <p>Expanding into other industries using existing advertising channels, network and resources to support creative endeavors.</p>
+            </div>
+            <div class="card" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
+                <img src="https://cdn-icons-png.flaticon.com/512/1232/1232603.png" alt="Technology Pivot">
+                <h3>Technology Pivot</h3>
+                <p>Embracing digital transformation with AR/VR solutions for immersive advertising experiences.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="section3" class="section">
+        <h2 data-aos="zoom-in" data-aos-duration="1000">Step 3: Analyze Feasibility</h2>
+        <p data-aos="fade-up" data-aos-duration="1000">
+            Feasibility studies using tools like SWOT, VRIO, and PESTEL ensure data-driven decision-making for selecting the optimal strategy. Learn more about feasibility approaches from 
+            <a href="https://www.deloitte.com/global/en/services/consulting.html" target="_blank">Deloitte Consulting</a>.
+        </p>
+        <img src="https://cdn-icons-png.flaticon.com/512/3079/3079036.png" alt="Feasibility Study" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1000">
+    </div>
+
+    <div id="section4" class="section" style="background: #fdfdfd;">
+        <h2>Step 4: Proposal Details</h2>
+        <p>We propose conducting a comprehensive feasibility analysis over a period of 4 weeks. This includes:</p>
+        <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <li><strong>Sessions:</strong> Two in-person meetings with key stakeholders and two online sessions for discussion and progress updates.</li>
+            <li><strong>Timeline:</strong> 4 weeks from project initiation.</li>
+            <li><strong>Cost:</strong> 20 million Toman (payable upfront).</li>
+            <li><strong>Scope:</strong> This analysis is separate from the execution and monitoring of the strategy.</li>
+        </ul>
+        <p>The final deliverable will be a <strong>static dashboard</strong> showcasing:</p>
+        <ul style="text-align: left; max-width: 800px; margin: 0 auto;">
+            <li>Step-by-step analysis based on frameworks like SWOT, VRIO, McKinsey 7S, and PESTEL.</li>
+            <li>Feasibility assessments for each proposed strategy.</li>
+            <li>A clear decision matrix to identify the most viable plan.</li>
+            <li>Visual representations of the findings for clarity and impact.</li>
+        </ul>
+        <p>Below is a schematic representation of the final output:</p>
+        <div class="section">
+            <h2>Static Dashboard</h2>
+            <div class="dashboard">
+                <h3>Analysis Frameworks</h3>
+                <div class="frameworks">
+                    <ul>
+                        <li><strong>SWOT Analysis:</strong> Highlighting strengths, weaknesses, opportunities, and threats.</li>
+                        <li><strong>VRIO Framework:</strong> Evaluating resources for competitive advantage.</li>
+                        <li><strong>PESTEL Analysis:</strong> Analyzing macro-environmental factors.</li>
+                        <li><strong>McKinsey 7S:</strong> Aligning internal strategy with operational goals.</li>
+                    </ul>
+                </div>
+                <h3>Feasibility Assessment of Ideas</h3>
+                <div class="chart">
+                    <div class="bar" style="height: 70%;">70%</div>
+                    <div class="bar" style="height: 50%;">50%</div>
+                    <div class="bar" style="height: 90%;">90%</div>
+                    <div class="bar" style="height: 60%;">60%</div>
+                </div>
+                <p>Each bar represents the feasibility score of proposed strategies based on thorough analysis.</p>
+                <h3>Final Recommendation</h3>
+                <p>The most viable strategy: <strong>Technology Pivot</strong> (90% Feasibility).</p>
+            </div>
+        </div>
+        <p>We look forward to collaborating with you on this critical strategic pivot journey.</p>
+    </div>
+
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <h2>Let’s Collaborate</h2>
+        <p>Ready to take Vision Tarh Rasam to the next level? Contact us today for a strategic partnership.</p>
+        <a href="telegram.me/hsdf1111">Contact Now</a>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS animations
+    </script>
+</body>
+</html>
